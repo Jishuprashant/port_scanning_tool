@@ -40,7 +40,7 @@ try:
         result = s.connect_ex((target, port))
         if result == 0:
             print("Port {} is open".format(port))
-            s.close
+        s.close
 #In order to avoid infinite loop, applying controlled exiting option
 except KeyboardInterrupt:
     print("Seems that you want to quit, Good Bye")   #for conditions similar to ctrl + c command
